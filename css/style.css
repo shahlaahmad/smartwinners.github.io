@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
+}
+
+
+.header{
+    /* width: 1200px; */
+    margin: 15px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px 10px 0;
+}
+
+.header-top-left{
+    gap: 29px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+}
+
+.header-top-left-logo{
+    height: 60px;
+    width: auto;
+    background: url(.logo)
+}
+
+
+.header-top-left-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top-left-text-top{
+    height: 21px;
+}
+
+.header-top-left-text-regular{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+   
+}
+
+.header-top-left-text-bold{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+
+}
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: none;
+}
+.btn-logout{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #0061A3;   
+}
+
+.header-top-left-text-bottom{
+    height: 18px;
+}
+
+.header-top-right{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+
+}
+
+.header-social-icons{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-icon{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+}
+
+.facebook-icon{
+    background-color: #1877F2;
+}
+
+.twitter-icon{
+    background-color: #1DA1F3;
+
+}
+
+.messenger-icon{
+    background-color: #1877F2;
+}
+
+.whatsapp-icon{
+    background-color: #25D366;
+}
+
+.language-section{
+    display: flex;
+    flex-direction: row; 
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.language_icon{
+    border-radius: 2px;
+    width: 20px;
+    height: 14px;
+    margin: 2px 0;
+}
+
+.language-name{
+    display: flex;
+    width: 58px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.header-bottom{
+    background-color: #F30000;
+    border-radius: 8px;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.header-nav{
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header-nav-link{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    padding: 0 25px;
+    text-decoration: none;
+
+
+    
+}
+
+.header-nav-link-active{
+    text-decoration-line: underline;
+}
+
+.header-nav-link::after { 
+    position: absolute;
+    content: "";
+    margin-left: 25px;
+    height: 24px;
+    width: 1px;
+    background-color: white;
+}
+
+.btn-my-account{
+    background-color: #0061A3;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    height: 34px;
+    width: 178px;
+    border-radius: 8px;
+}
+
+.banner{
+    margin: 30px auto;
+    width: 1200px;
+    border-radius: 8px;
+}
+
+.how-it-works{
+    margin: 0 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.how-it-works-item{
+    flex-grow: 1;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+}
+
+.how-it-works-image{
+    width: 80px;
+    height: 90px;
+}
+
+.how-it-works-text{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    padding-top: 4px;
+    margin-right: 15px;
+    width: 100%;
+    gap:5px;
+}
+
+.how-it-works-text-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 24px;   
+}
+
+.how-it-works-header{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn-how-it-works{
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration-line: underline;
+    color: #0061a3;
+}
+
+.how-it-works-body{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5f5f5f;    
+}
+
+.upcomings-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 75px 0;
+    width: 100%;
+} 
+
+.upcoming-card-header{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.upcoming-cards{
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 1200px;
+
+}
+
+.upcoming-card{
+    flex-grow: 1;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.upcoming-card-top{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;        
+}
+
+.upcoming-card-top-text-top{
+    display: flex;
+    align-items: center;
+    height: 36px;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.upcoming-card-top-text-bottom{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 22px;
+    color: #13902a;
+}
+
+.upcoming-flag-icon{
+    border-radius: 2px;
+}
+.upcoming-card-logo{
+    height: 80px;
+    width: 141px;
+    border-radius: 100%;
+    border: 1px solid #e0e0e0;
+    margin-left: 28px;
+    margin-right: 24px;
+}
+
+.upcoming-card-bottom{
+    background-color: #0061a3;
+    height: 58px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.upcoming-card-btn{
+    width: 171px;
+    height: 36px;
+    align-items: center;
+    background-color: #F7D300;
+    justify-content: center;
+    font-weight: 500;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    line-height: 24px;
+    border-radius: 8px;
+    margin-left: 12px;
+}
+.upcoming-card-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.time-icon{
+    width: 18px;
+    height: auto;
+}
+
+.upcoming-card-time-text{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
